@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day03\Data03.cs" />
+    <Compile Include="Day03\Problem03.cs" />
+    <Compile Include="Day04\Data04.cs" />
+    <Compile Include="Day04\Problem04.cs" />
     <Compile Include="Day02\Data02.cs" />
     <Compile Include="Day02\Problem02.cs" />
     <Compile Include="Day01\Data01.cs" />
@@ -60,6 +64,9 @@
       <Project>{20288f85-fef9-477d-89a7-c7d419d0fe1a}</Project>
       <Name>AoC</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Day04\Input04.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
