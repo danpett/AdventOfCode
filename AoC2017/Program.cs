@@ -3,6 +3,7 @@ using System.Linq;
 using AoC;
 using AoC2017.Day01;
 using AoC2017.Day02;
+using AoC2017.Day05;
 
 namespace AoC2017
 {
@@ -10,11 +11,9 @@ namespace AoC2017
    {
       public static void Main(string[] args)
       {
-         System.Reflection.Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(IProblem)))
-            .ForEach(ip => Solver.Solve((IProblem)Activator.CreateInstance(ip)));
+         // System.Reflection.Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(IProblem))).ForEach(ip => Solver.Solve((IProblem)Activator.CreateInstance(ip)));
+         Solver.Solve(new Problem05());
 
-         // Solver.Solve(new Problem01());
-         // Solver.Solve(new Problem02());
          Console.Read();
       }
    }
